@@ -1,0 +1,141 @@
+* {
+ padding: 0;
+ margin: 0;
+ box-sizing: border-box;
+ font-family: "Poppins", sans-serif;
+}
+
+body {
+ background-color: #f6f6f6;
+}
+header {
+ /* background-color: cadetblue; */
+ height: 12vh;
+ border-bottom: #e2e2e2 solid 1px;
+ width: 90%;
+ margin: auto;
+ box-shadow: 0 4px 12px -12px #808080;
+}
+
+header h3 {
+ color: #585858;
+ font-weight: 300;
+ text-transform: uppercase;
+ letter-spacing: 2px;
+ text-align: center;
+ padding-top: 3vh;
+ font-size: 1.6rem;
+}
+main {
+ width: 80%;
+ /* background-color: antiquewhite; */
+ margin: 100px auto;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+}
+.whole-container {
+ /* background-color: darkkhaki; */
+ width: 45%;
+ margin: auto;
+ position: relative;
+}
+.btn {
+ background: none;
+ border: none;
+ outline: none;
+ color: #585858;
+ font-size: 1.6rem;
+ font-weight: 300;
+ opacity: 0.3;
+ transition: all 0.4s ease;
+}
+.btn:hover {
+ opacity: 0.8;
+}
+
+main .prev-btn {
+ position: absolute;
+ top: 60%;
+ left: 300px;
+}
+main .next-btn {
+ position: absolute;
+ top: 60%;
+ right: 300px;
+}
+.slider-container {
+ /* background-color: rgb(59, 57, 57); */
+ width: 50%;
+ margin: auto;
+ border-radius: 3px;
+ border: 1px solid #d8d8d8;
+ transition: all ease 0.5s;
+}
+.slider-container:hover {
+ box-shadow: #808080 2px 2px 8px;
+}
+.slider-container img {
+ width: 100%;
+ border-radius: 3px 3px 0px 0px;
+}
+/* .silder {
+ border: 1px solid red; 
+  padding: 5px; 
+} */
+.desc {
+ padding: 5px;
+}
+.title h2 {
+ color: #585858;
+ font-weight: 400;
+ letter-spacing: 1px;
+}
+
+.silder h3 {
+ font-size: 1rem;
+ color: #585858;
+ cursor: pointer;
+}
+
+.silder h4 {
+ font-size: 0.8rem;
+ font-weight: 400;
+ color: #585858;
+ cursor: pointer;
+}
+
+.silder p {
+ font-size: 0.7rem;
+ font-weight: 300;
+ color: #929090;
+}
+
+.whole-container {
+ display: flex;
+ position: relative;
+ height: 490px;
+ /* background-color: aquamarine; */
+ overflow: hidden;
+}
+.slider-container {
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ opacity: 0;
+ transition: all 0.5s ease;
+}
+
+.slider-container.active {
+ opacity: 1;
+ transform: translateX(0);
+}
+.slider-container.next {
+ transform: translateX(100%);
+}
+.slider-container.last {
+ transform: translateX(-100%);
+}
