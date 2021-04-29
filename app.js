@@ -75,8 +75,8 @@ const startSlide = (type) => {
  last.classList.remove(["last"]);
 
  if (type === "prev") {
-  active.classList.add("next");
   last.classList.add("active");
+  active.classList.add("next");
   next = last.previousElementSibling;
 
   if (!next) {
